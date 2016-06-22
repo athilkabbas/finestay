@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>LOGIN</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link href="css/total.css" rel="stylesheet">
+    </head>
+    <body> 
+    
+    <!--page 1-->
+    
+    <div class="page" id="page1">
+           <nav class="navbar navbar-default navbar-fixed-top nt" role="navigation">
+                <div class="container-fluid">
+                     <a href="#" class="ca" onclick="return shown('!');"><span class="glyphicon glyphicon-arrow-left"></span></a>
+                    <a href="#" class="ch" onclick="return shown('page2');"><span class="glyphicon glyphicon-home"></span></a> 
+                    </div>
+        </nav>  
+        <form role="form"  action="#" name="form" onsubmit="return validateForm();" method="post">
+    <div class="container oc1">
+      <label for="checkin_token"></label><br><br>
+      <input type="text" class="form-control " name="checkin_token" id="place" placeholder="Enter Checkin Token">
+         <div class="row">
+            <br><br><div class="btn center-block cb">
+             <input type="submit" value="CHECK-IN" id="b1" class="btn">
+                </div>
+            </div>
+        <br><br>
+        <div class="row">
+        <div class="btn center-block cb">
+        <p id="p1">No account yet? Create one <a href="#" id="a1">Sign up</a></p>
+            </div>
+            </div>
+            </div>
+            </form>
+        </div>
+  
+        <!-- page 2-->
+        
+        <div class="page" id="page2">
+             <nav class="navbar navbar-default navbar-fixed-top nt" role="navigation">
+                <div class="container-fluid">
+                    </div>
+             </nav>  
+            <div class="oc2">
+            <div class="row">
+            <div class="left-box col-xs-4 col-xs-offset-2" id="first1">
+                <div class="pull-right">
+                    <a href="#" class="af" onclick="return shown('front_desk');">   <img src="front_desk.png" class="img-responsive" width="100" height="100">
+                        <div class="center-block cb1"><p id="1">Front Desk</p></div></a>                                                                    
+            </div> 
+            </div>    
+        <div class="right-box col-xs-4 col-xs-offset--2" id="first2">    
+          <div class="pull-left">
+                 <a href="#" class="af" onclick="return shown('travel');">   <img src="travel.png" class="img-responsive" width="100" height="100">
+              <div class="center-block cb1">Travel</div></a>
+            </div>
+        </div>
+        </div>
+             <div class="row">
+            <div class="left-box col-xs-4 col-xs-offset-2" id="s1">
+                <div class="pull-right">
+                <a href="#" class="af" onclick="return shown('room_service');">   <img src="vallet.png" class="img-responsive" width="100" height="100">
+                    <div class="center-block cb1">Room Service</div></a>
+            </div> 
+            </div>    
+        <div class="right-box col-xs-4 col-xs-offset--2" id="s2">    
+          <div class="pull-left">
+               <a href="#" class="af" onclick="return shown('housekeeping');">   <img src="rooms.png" class="img-responsive" width="100" height="100">
+              <div class="center-block cb1">Housekeeping</div></a>
+            </div>
+        </div>
+        </div>
+             <div class="row">
+            <div class="left-box col-xs-4 col-xs-offset-2" id="s1">
+                <div class="pull-right">
+                <a href="#" class="af" onclick="return shown('laundry');">   <img src="laundry.png" class="img-responsive" width="100" height="100">
+                    <div class="center-block cb1">Laundry</div></a>
+            </div> 
+            </div>    
+        <div class="right-box col-xs-4 col-xs-offset--2" id="s2">    
+          <div class="pull-left">
+                <a href="#" class="af" onclick="return shown('tv');">   <img src="tv.png" class="img-responsive" width="100" height="100">
+              <div class="center-block cb1">TV&amp;Appliances</div></a>
+            </div>
+        </div>
+        </div>
+    </div>        
+            <nav class="navbar navbar-default navbar-fixed-bottom nb" role="navigation">
+                <div class="container-fluid">
+                        <br>
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <div class="center-block cb">
+                                        <a href="#"><span class="glyphicon glyphicon-home"></span></a>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="center-block cb">
+                                        <a href="#"><span class="glyphicon glyphicon-lock"></span></a>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="center-block cb">
+                                        <a href="#"><span class="glyphicon glyphicon-calendar"></span></a> 
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                    </div>
+        </nav>    
+        </div>    
+        
+        <!--front desk-->
+        
+        <div class="oc3 page" id="front_desk">
+        <nav class="navbar navbar-default navbar-fixed-top nt" role="navigation">
+                <div class="container-fluid">
+                    </div>
+        </nav>  
+           <nav class="navbar navbar-default navbar-fixed-top nbt" role="navigation">
+              <nav class="navbar navbar-default navbar-fixed-top nh" role="navigation">
+                <div class="container-fluid">
+                        <a href="#" class="sp1" onclick="return shown('page2');"><span class="glyphicon glyphicon-arrow-left"></span></a>
+                            <p id="p2">Front Desk</p>
+                             <a href="#" class="h" onclick="return shown('page2');"><span class="glyphicon glyphicon-home"></span></a> 
+                    
+                    </div>
+        </nav>  
+            </nav> 
+                 <div class="br">  
+                    <div class="panel-body" id="pbw"><span class="sp2" onclick="return shown('page1','front_desk');">Check In/Out Procedures</span></div>
+                    <div class="panel-body" id="pb"><span class="sp2" onclick="return shown('page1','front_desk');">Messages/Mail</span></div>
+                    <div class="panel-body" id="pbw"><span class="sp2" onclick="return shown('page1','front_desk');">Services For Your Convenience</span></div>
+                    <div class="panel-body" id="pb"><span class="sp2" onclick="return shown('page1','front_desk');">Recreational Rentals and Facility Passes</span></div>
+                    <div class="panel-body" id="pbw"><span class="sp2" onclick="return shown('page1','front_desk');">Safety</span></div> 
+                    <div class="panel-body" id="pb"><span class="sp2" onclick="return shown('page1','front_desk');">Cleaning Services &amp; Supplies</span></div>    
+        
+        </div>
+        </div>    
+        
+        <!-- travel-->
+        
+               <div class="oc3 page" id="travel">
+        <nav class="navbar navbar-default navbar-fixed-top nt" role="navigation">
+                <div class="container-fluid">
+                    </div>
+        </nav>  
+           <nav class="navbar navbar-default navbar-fixed-top nbt" role="navigation">
+              <nav class="navbar navbar-default navbar-fixed-top nh" role="navigation">
+                <div class="container-fluid">
+                        <a href="#" class="sp1" onclick="return shown('page2');"><span class="glyphicon glyphicon-arrow-left"></span></a>
+                            <p id="p2">Travel</p>
+                            <a href="#" class="h" onclick="return shown('page2');"><span class="glyphicon glyphicon-home"></span></a> 
+                    
+                    </div>
+        </nav>  
+            </nav>
+                    <div class="br">  
+                    <div class="panel-body" id="pbw"><span class="sp2" onclick="return shown('page1','travel');">Get you a car</span></div>
+                    <div class="panel-body" id="pb"><span class="sp2" onclick="return shown('page1','travel');">Call a private car</span></div>
+                    <div class="panel-body" id="pbw"><span class="sp2" onclick="return shown('page1','travel');">Call for a cab</span></div>
+                    <div class="panel-body" id="pb"><span class="sp2" onclick="return shown('page1','travel');">Request guest parking</span></div>
+                    <div class="panel-body" id="pbw"><span class="sp2" onclick="return shown('page1','travel');">Request mechanic</span></div> 
+                    <div class="panel-body" id="pb"><span class="sp2" onclick="return shown('page1','travel');">Guide</span></div>    
+                        
+        </div>
+        </div>
+        
+        <!--Room Service-->
+        
+                    <div class="oc3 page" id="room_service">
+        <nav class="navbar navbar-default navbar-fixed-top nt" role="navigation">
+                <div class="container-fluid">
+                    </div>
+        </nav>  
+           <nav class="navbar navbar-default navbar-fixed-top nbt" role="navigation">
+              <nav class="navbar navbar-default navbar-fixed-top nh" role="navigation">
+                <div class="container-fluid">
+                        <a href="#" class="sp1" onclick="return shown('page2');"><span class="glyphicon glyphicon-arrow-left"></span></a>
+                            <p id="p2">Room Service</p>
+                            <a href="#" class="h" onclick="return shown('page2');"><span class="glyphicon glyphicon-home"></span></a> 
+                    
+                    </div>
+        </nav>  
+            </nav>
+                  <div class="br">  
+                    <div class="panel-body" id="pbw"><span class="sp2" onclick="return shown('page1','room_service');">Breakfast</span></div>
+                    <div class="panel-body" id="pb"><span class="sp2" onclick="return shown('page1','room_service');">Lunch</span></div>
+                    <div class="panel-body" id="pbw"><span class="sp2" onclick="return shown('page1','room_service');">Dinner</span></div>
+                    <div class="panel-body" id="pb"><span class="sp2" onclick="return shown('page1','room_service');">Special dishes</span></div>
+                    <div class="panel-body" id="pbw"><span class="sp2" onclick="return shown('page1','room_service');">Specially designed snack menu</span></div> 
+                    <div class="panel-body" id="pb"><span class="sp2" onclick="return shown('page1','room_service');">Hot &amp; cold food</span></div>    
+        </div>
+        </div>               
+        
+        <!--Housekeeping-->
+        
+        
+                    <div class="oc3 page" id="housekeeping">
+        <nav class="navbar navbar-default navbar-fixed-top nt" role="navigation">
+                <div class="container-fluid">
+                    </div>
+        </nav>  
+           <nav class="navbar navbar-default navbar-fixed-top nbt" role="navigation">
+              <nav class="navbar navbar-default navbar-fixed-top nh" role="navigation">
+                <div class="container-fluid">
+                        <a href="#" class="sp1" onclick="return shown('page2');"><span class="glyphicon glyphicon-arrow-left"></span></a>
+                            <p id="p2">Housekeeping</p>
+                            <a href="#" class="h" onclick="return shown('page2');"><span class="glyphicon glyphicon-home"></span></a> 
+                    </div>
+        </nav>  
+            </nav>
+                   <div class="br">  
+                    <div class="panel-body" id="pbw"><span class="sp2" onclick="return shown('page1','housekeeping');">Turndown service</span></div>
+                    <div class="panel-body" id="pb"><span class="sp2" onclick="return shown('page1','housekeeping');">Turndown the bed</span></div>                          
+                    <div class="panel-body" id="pbw"><span class="sp2" onclick="return shown('page1','housekeeping');">Place turndown amenities</span></div>
+                    <div class="panel-body" id="pb"><span class="sp2" onclick="return shown('page1','housekeeping');">Tidy the guest room</span></div>
+                    <div class="panel-body" id="pbw"><span class="sp2" onclick="return shown('page1','housekeeping');">Tidy the bathroom</span></div> 
+        </div>
+        </div>
+        
+        <!--laundry-->
+        
+                     <div class="oc3 page" id="laundry">
+        <nav class="navbar navbar-default navbar-fixed-top nt" role="navigation">
+                <div class="container-fluid">
+                    </div>
+        </nav>  
+           <nav class="navbar navbar-default navbar-fixed-top nbt" role="navigation">
+              <nav class="navbar navbar-default navbar-fixed-top nh" role="navigation">
+                <div class="container-fluid">
+                        <a href="#" class="sp1" onclick="return shown('page2');"><span class="glyphicon glyphicon-arrow-left"></span></a>
+                            <p id="p2">Laundry</p>
+                            <a href="#" class="h" onclick="return shown('page2');"><span class="glyphicon glyphicon-home"></span></a> 
+                    
+                    </div>
+        </nav>  
+            </nav><div class="br">  
+                    <div class="panel-body" id="pbw"><span class="sp2" onclick="return shown('page1','laundry');">Eco-friendly dry cleaning</span></div>
+                    <div class="panel-body" id="pb"><span class="sp2" onclick="return shown('page1','laundry');">Wash and fold</span></div>                                   
+                    <div class="panel-body" id="pbw"><span class="sp2" onclick="return shown('page1','laundry');">Package delivery</span></div>
+                    <div class="panel-body" id="pb"><span class="sp2" onclick="return shown('page1','laundry');">Fast delivery</span></div>
+        </div>
+        </div>
+        
+        <!--TV & Appliances-->
+        
+        
+                     <div class="oc3 page" id="tv">
+        <nav class="navbar navbar-default navbar-fixed-top nt" role="navigation">
+                <div class="container-fluid">
+                    </div>
+        </nav>  
+           <nav class="navbar navbar-default navbar-fixed-top nbt" role="navigation">
+              <nav class="navbar navbar-default navbar-fixed-top nh" role="navigation">
+                <div class="container-fluid">
+                        <a href="#" class="sp1" onclick="return shown('page2');"><span class="glyphicon glyphicon-arrow-left"></span></a>
+                            <p id="p2">TV &amp; Appliances</p>
+                             <a href="#" class="h" onclick="return shown('page2');"><span class="glyphicon glyphicon-home"></span></a> 
+                    
+                    </div>
+        </nav>  
+        </nav>  <div class="br">  
+                    <div class="panel-body" id="pbw"><span class="sp2" onclick="return shown('page1','tv');">Smart TVs</span></div>
+                    <div class="panel-body" id="pb"><span class="sp2" onclick="return shown('page1','tv');">Set top boxes</span></div>                         
+                    <div class="panel-body" id="pbw"><span class="sp2" onclick="return shown('page1','tv');">Mobile devices</span></div>
+                    <div class="panel-body" id="pb"><span class="sp2" onclick="return shown('page1','tv');">Commercial screens on public areas</span></div>
+                    <div class="panel-body" id="pbw"><span class="sp2" onclick="return shown('page1','tv');">Built-in digital signage</span></div> 
+                    <div class="panel-body" id="pb"><span class="sp2" onclick="return shown('page1','tv');">Safeguard premium TV</span></div>    
+        </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="js/bootstrap/bootstrap.min.js"></script>
+        <script src="js/hybrid.js"></script>
+        <script src="js/show.js"></script>
+        <script src="js/bg.js"></script>    
+   </body>
+</html>    
