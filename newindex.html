@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>LOGIN</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link href="css/total.css" rel="stylesheet">
+    </head>
+    <body> 
+    
+    <!--page 1-->
+    
+    <div class="page" id="page1">
+           <nav class="navbar navbar-default navbar-fixed-top nt" role="navigation">
+                <div class="container-fluid">
+                     <a href="#" class="ca" onclick="return shown('!');"><span class="glyphicon glyphicon-arrow-left"></span></a>
+                    <a href="#" class="ch" onclick="return shwn('page2');"><span class="glyphicon glyphicon-home"></span></a> 
+                    </div>
+        </nav>  
+        <form role="form"  action="validateForm();" name="form" onsubmit="return validateForm();" method="post">
+    <div class="container oc1">
+      <label for="checkin_token"></label><br><br>
+      <input type="text" class="form-control " name="checkin_token" id="place" placeholder="Enter Checkin Token">
+         <div class="row">
+            <br><br><div class="btn center-block cb">
+             <input type="submit" value="CHECK-IN" id="b1" class="btn">
+                </div>
+            </div>
+        <br><br>
+        <div class="row">
+        <div class="btn center-block cb">
+        <p id="p1">No account yet? Create one <a href="#" id="a1">Sign up</a></p>
+            </div>
+            </div>
+            </div>
+            </form>
+        </div>
+  
+        <!-- page 2-->
+        
+        <div class="page" id="page2">
+             <nav class="navbar navbar-default navbar-fixed-top nt" role="navigation">
+                <div class="container-fluid">
+                    </div>
+             </nav>  
+            <div class="oc2" id="d1"></div>        
+            <nav class="navbar navbar-default navbar-fixed-bottom nb" role="navigation">
+                <div class="container-fluid">
+                        <br>
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <div class="center-block cb">
+                                        <a href="#"><span class="glyphicon glyphicon-home"></span></a>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="center-block cb">
+                                        <a href="#"><span class="glyphicon glyphicon-lock"></span></a>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="center-block cb">
+                                        <a href="#"><span class="glyphicon glyphicon-calendar"></span></a> 
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                    </div>
+        </nav>    
+        </div>    
+        
+        <!--Inner Page-->
+        
+        <div class="oc3 page" id="inner_page">
+        <nav class="navbar navbar-default navbar-fixed-top nt" role="navigation">
+                <div class="container-fluid">
+                    </div>
+        </nav>  
+              <nav class="navbar navbar-default navbar-fixed-top nh" role="navigation">
+                <div class="container-fluid">
+                        <a href="#" class="sp1" onclick="return shwn('page2');"><span class="glyphicon glyphicon-arrow-left"></span></a>
+                            <p id="p2"></p>
+                             <a href="#" class="h" onclick="return shwn('page2');"><span class="glyphicon glyphicon-home"></span></a> 
+                    
+                    </div>
+       </nav>      
+            <div class="br" id="pl"></div> 
+        </div>    
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="js/bootstrap/bootstrap.min.js"></script>
+        <script src="js/hybrid.js"></script>
+        <script src="js/show.js"></script>
+        <script src="js/bg.js"></script>  
+        <script src="js/bootstrap/crt.js"></script>
+        <script src="js/fn.js"></script>
+   </body>
+</html>    
